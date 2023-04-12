@@ -51,6 +51,12 @@ interfaces. You can then visit the site at http://localhost:8080/
 
 ## Development mode
 
+create database
+```bash
+$ sqlite data/laminastutorial.db < data/schema.sql # SQLite  
+$ cat data/schema.sql | sqlite3 data/laminastutorial.db # SQLite 3
+```
+
 The skeleton ships with [laminas-development-mode](https://github.com/laminas/laminas-development-mode)
 by default, and provides three aliases for consuming the script it ships with:
 
